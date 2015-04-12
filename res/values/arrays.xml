@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genders_list">
+        <item>@string/gender_male</item>
+        <item>@string/gender_female</item>
+    </string-array>
+    
+    <string-array name="hands_list">
+        <item>@string/right_hand</item>
+        <item>@string/left_hand</item>
+    </string-array>
+</resources>

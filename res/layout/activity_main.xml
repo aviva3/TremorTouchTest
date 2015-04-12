@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="@string/main_form_title"
+            android:textSize="10pt" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/testerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tester_name_hint"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/testerAge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tester_age_hint"
+            android:inputType="number" >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/testerGender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/genders_list" >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/testerHand"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/hands_list" >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/testerTremorTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tremor_time_hint"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/testerTremorEstimation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tremor_estimation_hint"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/testerMedical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/medical_hint"
+            android:inputType="textMultiLine"
+            android:lines="5" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/testerNotes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notes_hint"
+            android:inputType="textMultiLine"
+            android:lines="5" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/startTestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start_test_button_selector" />
+    </LinearLayout>
+
+</ScrollView>
